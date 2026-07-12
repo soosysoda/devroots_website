@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "DevRoots — Systems, rooted right.",
   description:
     "DevRoots is a Kolkata-based systems operations studio: we design, build, and run the websites and infrastructure that keep organizations working.",
+  icons: {
+    icon: "/brand/mark.png",
+  },
 };
 
 export default function RootLayout({
