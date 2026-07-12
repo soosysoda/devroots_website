@@ -57,13 +57,13 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5 text-sm text-ink-dim">
               <li>Kolkata, West Bengal, India</li>
               <li>
-                <a href="mailto:hello@devroots.in" className="text-ink hover:text-brand">
-                  hello@devroots.in
+                <a href="mailto:info@devroots.co.in" className="text-ink hover:text-brand">
+                  info@devroots.co.in
                 </a>
               </li>
               <li>
-                <a href="tel:+913300000000" className="text-ink hover:text-brand">
-                  +91 33 0000 0000
+                <a href="tel:+919830979412" className="text-ink hover:text-brand">
+                  +91 9830 979 412
                 </a>
               </li>
             </ul>
@@ -72,7 +72,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col gap-3 border-t border-panel-line/60 pt-6 font-mono text-xs uppercase tracking-wider text-ink-dim sm:flex-row sm:items-center sm:justify-between">
           <span>© {new Date().getFullYear()} DevRoots. All rights reserved.</span>
-          <span className="text-brand">// rooted in Kolkata, deployed everywhere</span>
+          <span className="text-brand">// rooted indegeniously, deployed everywhere</span>
         </div>
       </div>
     </footer>
