@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0a2e27;
+  --bg-deep: #071f1a;
+  --panel: #0f3a30;
+  --panel-line: #1d5346;
+  --ink: #eaf3ee;
+  --ink-dim: #a9c4bb;
+  --brand: #29aad4;
+  --brand-dim: #1c7e9e;
+  --coral: #ff6f61;
+  --lime: #a4e05b;
+  --magenta: #e838c4;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-deep: var(--bg-deep);
+  --color-panel: var(--panel);
+  --color-panel-line: var(--panel-line);
+  --color-ink: var(--ink);
+  --color-ink-dim: var(--ink-dim);
+  --color-brand: var(--brand);
+  --color-brand-dim: var(--brand-dim);
+  --color-coral: var(--coral);
+  --color-lime: var(--lime);
+  --color-magenta: var(--magenta);
+  --font-display: "Chakra Petch", "Trebuchet MS", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular",  ui-monospace, Menlo, Consolas, monospace;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(ellipse 120% 80% at 15% -10%, rgba(41, 170, 212, 0.12), transparent 60%),
+    radial-gradient(ellipse 90% 60% at 100% 0%, rgba(232, 56, 196, 0.06), transparent 55%),
+    var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+.facet {
+  clip-path: polygon(
+    0 14px, 14px 0,
+    calc(100% - 14px) 0, 100% 14px,
+    100% calc(100% - 14px), calc(100% - 14px) 100%,
+    14px 100%, 0 calc(100% - 14px)
+  );
+}
+
+.facet-sm {
+  clip-path: polygon(
+    0 8px, 8px 0,
+    calc(100% - 8px) 0, 100% 8px,
+    100% calc(100% - 8px), calc(100% - 8px) 100%,
+    8px 100%, 0 calc(100% - 8px)
+  );
+}
+
+.facet-br {
+  clip-path: polygon(
+    0 0, 100% 0,
+    100% calc(100% - 22px), calc(100% - 22px) 100%,
+    0 100%
+  );
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-stretch: semi-condensed;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: var(--brand);
+  color: var(--bg-deep);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
