@@ -58,12 +58,12 @@ export default function Footer() {
               <li>Kolkata, West Bengal, India</li>
               <li>
                 <a href="mailto:info@devroots.co.in" className="text-ink hover:text-brand">
-                  info@devroots.co.in
+                  hellotech@devroots.site
                 </a>
               </li>
               <li>
                 <a href="tel:+919830979412" className="text-ink hover:text-brand">
-                  +91 9830 979 412
+                  +91 74396 08891
                 </a>
               </li>
             </ul>
